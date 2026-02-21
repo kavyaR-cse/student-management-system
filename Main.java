@@ -126,7 +126,7 @@ public class Main {
                 System.out.print("Enter new Age: ");
                 int newAge = sc.nextInt();
 
-                // Since fields are private, we need setters
+                
                 students.remove(s);
                 students.add(new Student(id, newName, newAge));
 
