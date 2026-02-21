@@ -5,6 +5,7 @@ A console-based application to manage student records.
 -Add Student
 -View all students
 -Search by ID
+-Update Student by ID
 -Delete Student by ID
 
 ## Technologies used
