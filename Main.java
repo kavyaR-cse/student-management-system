@@ -77,7 +77,7 @@ public class Main {
         int id = sc.nextInt();
 
         for (Student s : students) {
-            if (s.getId() == id) {
+            if (s.getID() == id) {
                 System.out.println("\nStudent found:");
                 System.out.println(s+ "\n");
                 return;
