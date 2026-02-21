@@ -9,7 +9,10 @@ public class Main {
     public static void main(String[] args) {
 
         while (true) {
-            System.out.println("\n1. Add Student");
+            System.out.println("\n******************");
+            System.out.println("Student Management System");
+            System.out.println("******************");
+            System.out.println("1. Add Student");
             System.out.println("2. View Students");
             System.out.println("3. Search Student by ID");
             System.out.println("4. Delete Student by ID");
@@ -41,6 +44,7 @@ public class Main {
     }
 
     public static void addStudent() {
+        System.out.println("\n---Add Student---");
         System.out.print("Enter ID: ");
         int id = sc.nextInt();
         sc.nextLine();
@@ -56,6 +60,7 @@ public class Main {
     }
 
     public static void viewStudents() {
+        System.out.println("\n---Student List---");
         if (students.isEmpty()) {
             System.out.println("No students found.");
             return;
@@ -67,32 +72,34 @@ public class Main {
     }
 
     public static void searchStudent() {
+        System.out.println("\n---Search Student---");
         System.out.print("Enter ID to search: ");
         int id = sc.nextInt();
 
         for (Student s : students) {
             if (s.getId() == id) {
-                System.out.println("Student found:");
-                System.out.println(s);
+                System.out.println("\nStudent found:");
+                System.out.println(s+ "\n");
                 return;
             }
         }
 
-        System.out.println("Student not found.");
+        System.out.println("\nStudent not found.\n");
     }
 
     public static void deleteStudent() {
+        System.out.println("\n---Delete Student---");
         System.out.print("Enter ID to delete: ");
         int id = sc.nextInt();
 
         for (Student s : students) {
             if (s.getID() == id) {
                 students.remove(s);
-                System.out.println("Student deleted.");
+                System.out.println("\nStudent deleted.\n");
                 return;
             }
         }
 
-        System.out.println("Student not found.");
+        System.out.println("\nStudent not found.\n");
     }
 }
